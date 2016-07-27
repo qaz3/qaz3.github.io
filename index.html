@@ -1,0 +1,108 @@
+
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your name</title>
+  <link rel="stylesheet" href="indexstyle.css">
+
+</head>
+<body>
+    <button type="button" onclick="alert('Hello, Thank you for visiting my website. !')">Click Me!</button>
+<ul class="tab">
+
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Me')">Me</a></li>
+
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'My sister')">My sister</a></li>
+
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'My parents')">My parents</a></li>
+
+</ul>
+
+
+<div id="Me" class="tabcontent">
+
+  <h3>Me</h3>
+
+  <p>I am 9 years old I was born on october 27, 2006.</p>
+
+</div>
+
+
+<div id="My sister" class="tabcontent">
+
+  <h3>My sister</h3>
+
+  <p>My sister likes to play with me. She is really cute. She is the best sister.</p>
+
+</div>
+
+<div id="My parents" class="tabcontent">
+
+  <h3>My parents</h3>
+
+  <p>My mom and my dad are really nice. They are both 40 years old. They are the best</p>
+</div>
+
+
+
+     <h1>Hi My Name Is Yash</h1>
+     <h2>I am 9 years old</h2>
+     <h3>I like to play with legos</h3>
+     <h4>Player of the day: Stephen Curry!!!</h4>
+     <h5>Warrior info</h5>
+     <img class = "imgl" src = "warriors.JPG">
+     <a href="http://www.nba.com/warriors/">
+<p> !!!Go Warriors!!!  Click on me for information on the Warriors! </p>
+</a>
+ <a href="http://www.funtrivia.com/quizzes/sports/basketball.html">
+<p> !!!Go Warriors!!!  Click on me for basktball trivia!!! </p>
+</a>
+<img class = "img2" src = "steph.gif">
+
+<form action="http://www.smileydoctor.com/">
+  <fieldset>/
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="qwaz"><br>
+    Last name:<br>
+     <input type="text" name="lastname" value="3"><br><br>
+     <input type="submit" value="Submit">.
+<input type="hidden" name="redirect" value="http://tinoiq.com"> 
+  </fieldset>
+</form>
+<a href = "http://tinoiq.com/">
+<img class = "img3" src = "tino.JPG"
+<p> Click on this image to learn about Tino IQ</p>
+<script>
+
+function openCity(evt, cityName) {
+
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+
+    for (i = 0; i < tabcontent.length; i++) {
+
+        tabcontent[i].style.display = "none";
+
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+
+    for (i = 0; i < tablinks.length; i++) {
+
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+    }
+
+    document.getElementById(cityName).style.display = "block";
+
+    evt.currentTarget.className += " active";
+
+}
+
+</script>
+
+</body>
+</html>
